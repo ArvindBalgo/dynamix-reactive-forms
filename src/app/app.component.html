@@ -1,0 +1,5 @@
+<form [formGroup]="dynamicForm.formGroup">
+  <div viewMode="basic" [rxwebDynamicForm]="dynamicForm" [uiBindings]="uiBindings">
+  </div>
+  <button [disabled]="!dynamicForm.formGroup.valid" type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+</form>
